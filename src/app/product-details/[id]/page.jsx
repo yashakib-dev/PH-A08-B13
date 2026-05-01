@@ -1,5 +1,8 @@
+
+import ButtonsHandler from '@/components/shared/ButtonsHandler';
 import Image from 'next/image';
 import React from 'react';
+import toast from 'react-hot-toast';
 import { BsCart3 } from 'react-icons/bs';
 import { FaRegStar } from 'react-icons/fa6';
 import { FcRating } from 'react-icons/fc';
@@ -30,22 +33,19 @@ const ProductsDetailsPage = async({params}) => {
                 </div>
 
                 <div className='space-y-6 '>
-                        <h3 className='text-[#FF7B24] text-xl font-medium'>{category}</h3>
+                        <h3 className='text-[#D4924A] text-xl font-medium'>{category}</h3>
                         <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold'>{name}</h2>
                         <p className='text-gray-400 lg:text-lg'>by {brand}</p>
                         <div className="w-fit flex items-center gap-2 ">
                         <p className='font-bold'>{rating}</p>
                         <FaRegStar className="h-5 w-5 font-bold" />
                         </div>
-                        <p className='text-6xl font-bold text-[#FF7B24]'>${price}</p>
+                        <p className='text-6xl font-bold text-[#D4924A]'>${price}</p>
                         <p className='text-gray-500 lg:text-lg'>{description}</p>
                         <p className='font-bold text-[green]'>In Stock ({stock} left)</p>
 
                     
-                       <div className='flex gap-4'>
-                            <button className='btn  rounded-3xl  w-35 h-12 bg-[#000000] hover:bg-[#FF7B24] text-white' ><BsCart3 />Add to Cart</button>
-                            <button className='btn  rounded-3xl w-35 h-12 bg-[#FF7B24] text-white'>Buy Now</button>
-                        </div>
+                       <ButtonsHandler product={product}></ButtonsHandler>
                 </div>
             </div>
         </div>

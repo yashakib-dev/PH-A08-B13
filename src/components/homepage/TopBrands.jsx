@@ -3,7 +3,7 @@ import React from 'react';
 const TopBrands = () => {
     return (
         <div className='my-20 container lg:w-full w-[90%] mx-auto space-y-6'>
-            <h2 className="lg:text-6xl md:text-5xl text-4xl font-bold ">Top <span className="text-[#FF7B24]">Brands</span></h2>
+            <h2 className="lg:text-6xl md:text-5xl text-4xl font-bold ">Top <span className="text-[#D4924A]">Brands</span></h2>
             <p  className="text-lg text-black/80">We partner with the best summer lifestyle brands in the world</p>
 
             <div className='grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-8 py-10' >

@@ -6,7 +6,7 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 
 const Hero = () => {
     return (
-       <div className="hero bg-[#FFF8F0] min-h-[500px]">
+       <div className="hero bg-linear-to-r from-[#D4924A] to-[#b0713298] min-h-[500px]">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <Image
     alt="HeroBg"
@@ -21,7 +21,7 @@ const Hero = () => {
       <p className="py-6 lg:text-lg text-[black]/80">
         Discover curated summer essentials from beach-ready styles to skincare that glows. Enjoy upto 50% off on all sunglasses.
       </p>
-      <button className='btn  rounded-3xl w-35 h-12 font-bold text-[white] bg-[#FF7B24]'>Buy Now <FaArrowRightLong /> </button>
+      <button className='btn border-0 text-lg rounded-3xl  bg-linear-to-r from-[#D4924A] to-[#B07232] hover:bg-linear-to-r hover:from-[#d4914abe] hover:to-[#b071326e] h-12 hover:shadow-xl w-35'>Buy Now <FaArrowRightLong /> </button>
     </div>
   </div>
 </div>
