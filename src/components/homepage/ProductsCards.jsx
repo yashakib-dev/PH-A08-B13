@@ -1,5 +1,6 @@
 import { FaArrowRightLong, FaRegStar } from "react-icons/fa6";
 import Image from "next/image";
+import Link from "next/link";
 const ProductsCards = ({ products, loading }) => {
   return (
     <div className="my-20 container lg:w-full w-[90%] mx-auto space-y-6">
@@ -39,9 +40,9 @@ const ProductsCards = ({ products, loading }) => {
                       <p>{product.rating}</p>
                       <FaRegStar className="h-5 w-5" />
                     </div>
-                    <button className="btn rounded-3xl font-bold text-[white] bg-[#FF7B24] ml-4">
+                    <Link href={`/product-details/${product.id}`} className="btn rounded-3xl font-bold text-[white] bg-[#FF7B24] ml-4">
                       View Details <FaArrowRightLong></FaArrowRightLong>{" "}
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

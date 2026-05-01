@@ -19,9 +19,9 @@ const Navbar = () => {
         className="menu menu-sm dropdown-content font-semibold bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
          <li><Link href="/">Home</Link></li>
          <li>
-             <Link href="/timeline">Products</Link>
+             <Link href="/products">Products</Link>
          </li>
-        <li><Link href="/stats">My Profile</Link></li>
+        <li><Link href="/my-profile">My Profile</Link></li>
       </ul>
     </div>
     <h2 className="font-bold text-4xl ">Sun<span className='text-[#FF7B24]'>Cart</span></h2>
@@ -32,9 +32,9 @@ const Navbar = () => {
     <ul className="menu font-semibold gap-2  text-white rounded-md menu-horizontal px-1">
       <li><NavLinks href="/"><RiHome2Line />Home</NavLinks></li>
       <li>
-        <NavLinks href="/timeline"><AiOutlineProduct className='w-4 h-4' />Products</NavLinks>
+        <NavLinks href="/products"><AiOutlineProduct className='w-4 h-4' />Products</NavLinks>
       </li>
-      <li><NavLinks href="/stats"><CgProfile />My Profile</NavLinks></li>
+      <li><NavLinks href="/my-profile"><CgProfile />My Profile</NavLinks></li>
     </ul>
   </div>
 
