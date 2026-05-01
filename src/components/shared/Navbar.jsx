@@ -40,9 +40,9 @@ const Navbar = () => {
 
 
   <div className="navbar-end lg:flex">
-    <div className='flex gap-3 '>
-        <button className='btn rounded-3xl font-bold bg-transparent hover:border hover:border-orange-500 hover:text-[#FF7B24] '>Login</button>
-        <button className='btn rounded-3xl font-bold text-[white] bg-[#FF7B24]'>Register</button>
+    <div className='flex lg:gap-3 gap-1'>
+        <button className='btn rounded-3xl  lg:w-25 lg:h-12 font-bold bg-transparent hover:border hover:border-orange-500 hover:text-[#FF7B24] '>Login</button>
+        <button className='btn rounded-3xl  lg:w-28 lg:h-12 font-bold text-[white] bg-[#FF7B24]'>Register</button>
     </div>
   </div>
 
