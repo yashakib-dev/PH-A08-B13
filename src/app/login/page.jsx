@@ -23,9 +23,15 @@ const LoginPage = () => {
   };
 
     const handleGoogleLogin = async () => {
-    const data = await authClient.signIn.social({
+    const {data:res, error} = await authClient.signIn.social({
       provider: "google",
     });
+        if (error) {
+      toast.error(error.message);
+    }
+    if(res){
+      toast.success("Login successful")
+    }
     
   };
 

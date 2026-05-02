@@ -32,10 +32,10 @@ const Footer = () => {
           </nav>
           <nav className="font-light text-[#ffffffab]">
             <h6 className="text-[#FFFFFF] font-bold text-2xl">Resources</h6>
-            <a className="link link-hover">Documentation</a>
+            <a className="link link-hover">Contact info</a>
             <a className="link link-hover">Help Center</a>
             <a className="link link-hover">Community</a>
-            <a className="link link-hover">Contact</a>
+            <a className="link link-hover">Documentation</a>
           </nav>
           <nav>
             <h6 className="footer-title">Social Links</h6>

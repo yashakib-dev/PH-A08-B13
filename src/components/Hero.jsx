@@ -18,7 +18,8 @@ const Hero = () => {
       
     />
     <div>
-      <h1 className="lg:text-7xl md:text-5xl text-4xl animate__animated animate__tada animate__repeat-2 font-bold">Summer Sale <br /> 50% OFF</h1>
+      <span className='badge mb-4 badge-soft bg-[#D4924A] shadow-xl border-white/30 font-medium '>Hot Deals🔥</span>
+      <h1 className="lg:text-7xl text-5xl animate__animated animate__tada animate__repeat-2 font-bold">Summer Sale <br /> 50% OFF</h1>
       <p className="py-6 lg:text-lg text-[black]/80">
         Discover curated summer essentials from beach-ready styles to skincare that glows. Enjoy upto 50% off on all sunglasses.
       </p>
