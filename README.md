@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SunCart — Summer Essentials Store
 
-## Getting Started
+> A modern, full-featured summer eCommerce platform built with Next.js, featuring product browsing, protected routes, and multi-provider authentication via BetterAuth.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+##  Live URL
+
 ```
+https://ph-a08-b13.vercel.app/
+```
+---
+##  Purpose
+ 
+SunCart is a seasonal eCommerce web application where users can explore and purchase summer essentials — including sunglasses, beach outfits, skincare products, and accessories. The platform provides a seamless shopping experience with authentication-protected product detail pages, category filtering, and a clean warm-espresso themed UI.
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##  Key Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- ** Home Page** — Animated hero banner with summer sale highlights, popular products section, summer care tips, and top brand showcases
+- ** Protected Product Detail** — Full product detail page (image, price, rating, stock) accessible only to authenticated users; unauthenticated users are redirected to login and returned after sign-in
+- ** Authentication (BetterAuth)** — Email/password login & registration with form validation, error toasts, and Google OAuth (one-click social login)
+- ** User Profile** — Displays account info for logged-in users
+- ** Responsive Design** — Fully responsive layout across desktop, tablet, and mobile
+- ** Warm Espresso Theme** — Custom color system built around `#351E11` (dark brown), `#D4924A` (warm amber), and `#FFF8F1`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tech Stack & NPM Packages
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js
+- TailwindCSS
+- BetterAuth
+- DaisyUI
+- MongoDB
+- React Hot Toast
+- React hook form
+- React Icons

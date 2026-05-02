@@ -1,14 +1,12 @@
-
 import ButtonsHandler from '@/components/shared/ButtonsHandler';
 import Image from 'next/image';
 import React from 'react';
 import toast from 'react-hot-toast';
-import { BsCart3 } from 'react-icons/bs';
 import { FaRegStar } from 'react-icons/fa6';
-import { FcRating } from 'react-icons/fc';
+
 
 const productsPromise = async () => {
-  const res = await fetch("http://localhost:3000/data.json");
+  const res = await fetch("https://ph-a08-b13.vercel.app/data.json");
   const products = await res.json();
   return products;
 };
