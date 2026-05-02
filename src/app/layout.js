@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
           <Navbar></Navbar>
            {children}
            <Footer></Footer>
-           <Toaster position="bottom-center" reverseOrder={false}/>
+           <Toaster position="top-center" reverseOrder={false}/>
         </Providers>
       </body>
     </html>

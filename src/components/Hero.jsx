@@ -3,6 +3,7 @@ import React from 'react';
 import HeroImg from '../../public/bannerBg.png'
 
 import { FaArrowRightLong } from 'react-icons/fa6';
+import Link from 'next/link';
 
 const Hero = () => {
     return (
@@ -21,7 +22,7 @@ const Hero = () => {
       <p className="py-6 lg:text-lg text-[black]/80">
         Discover curated summer essentials from beach-ready styles to skincare that glows. Enjoy upto 50% off on all sunglasses.
       </p>
-      <button className='btn border-0 text-lg rounded-3xl  bg-linear-to-r from-[#D4924A] to-[#B07232] hover:bg-linear-to-r hover:from-[#d4914abe] hover:to-[#b071326e] h-12 hover:shadow-xl w-35'>Buy Now <FaArrowRightLong /> </button>
+      <Link href={'/products'} className='btn border-0 text-lg rounded-3xl  bg-linear-to-r from-[#D4924A] to-[#b07132] hover:bg-linear-to-r hover:from-[#d4914abe] hover:to-[#b071326e] h-12 hover:shadow-xl w-35'>Buy Now <FaArrowRightLong /> </Link>
     </div>
   </div>
 </div>
