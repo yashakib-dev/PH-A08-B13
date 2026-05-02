@@ -36,3 +36,4 @@ SunCart is a seasonal eCommerce web application where users can explore and purc
 - React Hot Toast
 - React hook form
 - React Icons
+- Animate.css
