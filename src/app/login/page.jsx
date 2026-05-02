@@ -21,13 +21,21 @@ const LoginPage = () => {
       toast.success("Login successful")
     }
   };
+
+    const handleGoogleLogin = async () => {
+    const data = await authClient.signIn.social({
+      provider: "google",
+    });
+    
+  };
+
   return (
     <div className="  bg-[#FFF8F1]  ">
         <form className="flex lg:w-full w-[90%]  container mx-auto justify-center min-h-screen  items-center" onSubmit={handleSubmit(handleLogin)}>
           <fieldset className="fieldset space-y-2 bg-base-100 shadow-2xl border-[#D4924A]/50  rounded-3xl w-120 h-160 border p-15">
-            <h2 className="lg:text-5xl text-3xl font-semibold text-center">Welcome Back</h2>
+            <h2 className="lg:text-5xl text-3xl font-semibold text-center">Login</h2>
             <p className="lg:text-lg text-[16px] text-center text-[#D4924A]">
-              Sign in to your SunCart account
+              Login to your SunCart account
             </p>
 
             <div>
@@ -56,7 +64,9 @@ const LoginPage = () => {
               Login
             </button>
             <div className="divider">OR</div>
-            <button className="btn bg-transparent py-6 rounded-3xl">
+            <button
+            onClick={handleGoogleLogin}
+             className="btn bg-transparent py-6 rounded-3xl">
               <FcGoogle className="w-5 h-5"></FcGoogle>Continue with Google
             </button>
             <p className="text-center text-sm text-[#D4924A]">

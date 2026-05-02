@@ -7,12 +7,12 @@ import Link from 'next/link';
 
 const Hero = () => {
     return (
-       <div className="hero bg-linear-to-r from-[#D4924A] to-[#b0713298] min-h-[500px]">
+       <div className="hero bg-linear-to-r from-[#D4924A] to-[#b0713298] min-h-[400px]">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <Image
     alt="HeroBg"
-    width={500}
-    height={500}
+    width={300}
+    height={300}
       src={HeroImg}
       className="w-full "
       

@@ -12,7 +12,7 @@ import { useRouter } from "next/navigation";
 const Navbar = () => {
   const [user, setUser] = useState(null);
   const router = useRouter();
-  
+
   const handleLogout = async () => {
   await authClient.signOut({
     fetchOptions: {
@@ -72,7 +72,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <h2 className="font-bold text-4xl text-white ">
+          <h2 className="font-bold lg:text-4xl text-3xl text-white ">
             Sun<span className="text-[#D4924A]">Cart</span>
           </h2>
         </div>
@@ -103,7 +103,7 @@ const Navbar = () => {
         <div className="navbar-end lg:flex">
           <div className="flex lg:gap-3 gap-2">
             {user ? (
-              <div className="flex items-center gap-3">
+              <div className="flex items-center lg:gap-3">
                 <h2 className="text-white">Hello, {user.name}</h2>
                 <button
                    onClick={handleLogout} 

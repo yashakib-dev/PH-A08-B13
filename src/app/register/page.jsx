@@ -13,12 +13,12 @@ const RegisterPage = () => {
   } = useForm();
 
   const handleRegister = async (data) => {
-    const { email, name, photo, password } = data;
+    const { email, name, image, password } = data;
     const { data: res, error } = await authClient.signUp.email({
       name: name,
       email: email,
       password: password,
-      image: photo,
+      image: image,
       callbackURL: "/",
     });
     console.log(res, error);
@@ -34,7 +34,6 @@ const RegisterPage = () => {
     const data = await authClient.signIn.social({
       provider: "google",
     });
-    console.log(data);
     
   };
 
