@@ -10,7 +10,7 @@ const ProductsCards = ({ products, loading }) => {
       <p className="text-lg text-black/80">
         Handpicked bestsellers for this summer season
       </p>
-      <div className="container mx-auto  grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-8">
+      <div className="container mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-8">
         {loading ? (
             <div className="flex justify-center h-[20vw] w-[80vw]  "><span className="loading  w-15 loading-spinner loading-xl"></span></div>
           
@@ -19,7 +19,7 @@ const ProductsCards = ({ products, loading }) => {
             return (
               <div
                 key={product.id}
-                className="card mt-10 shadow-sm border border-gray-200"
+                className="card mt-10 h-100 shadow-sm border border-gray-200"
               >
                 <figure>
                   <Image
