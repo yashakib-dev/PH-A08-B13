@@ -108,8 +108,8 @@ const Navbar = () => {
                 <Image
                   src={user?.image || "https://i.ibb.co.com/BHpL76BD/profile.avif"}
                   alt="Profile picture"
-                  width={44}
-                  height={44}
+                  width={42}
+                  height={42}
                   className="rounded-full mx-auto "
                 />
                 
