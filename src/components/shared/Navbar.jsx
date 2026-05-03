@@ -7,21 +7,21 @@ import { AiOutlineProduct } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { authClient } from "@/app/lib/auth-client";
 import { useRouter } from "next/navigation";
-
+import Image from "next/image";
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
   const router = useRouter();
 
   const handleLogout = async () => {
-  await authClient.signOut({
-    fetchOptions: {
-      onSuccess: () => {
-        router.push("/login"); 
+    await authClient.signOut({
+      fetchOptions: {
+        onSuccess: () => {
+          router.push("/login");
+        },
       },
-    },
-  });
-};
+    });
+  };
 
   useEffect(() => {
     const getSession = async () => {
@@ -103,10 +103,19 @@ const Navbar = () => {
         <div className="navbar-end lg:flex">
           <div className="flex lg:gap-3 gap-2">
             {user ? (
-              <div className="flex items-center lg:gap-3">
-                <h2 className="text-white">Hello, {user.name}</h2>
+              <div className="flex items-center lg:gap-3 gap-2">
+                <div className="text-center mx-auto">
+                <Image
+                  src={user.image || "https://i.ibb.co.com/BHpL76BD/profile.avif"}
+                  alt="Profile picture"
+                  width={44}
+                  height={44}
+                  className="rounded-full mx-auto "
+                />
+                <h2 className="text-white">{user.name}</h2>
+                </div>
                 <button
-                   onClick={handleLogout} 
+                  onClick={handleLogout}
                   className="btn rounded-3xl  lg:w-25 lg:h-10 font-bold bg-transparent hover:border hover:border-[#D4924A] hover:text-[#D4924A] text-white "
                 >
                   Logout
