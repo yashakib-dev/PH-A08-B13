@@ -43,7 +43,7 @@ const router = useRouter();
             <h2 className="text-2xl mb-4 font-bold">Account Details</h2>
             <p>Name: {user?.name}</p>
             <p>Email: {user?.email}</p>
-            <p>Image URL: {user?.image}</p>
+            
             
         </div>
       </div>
