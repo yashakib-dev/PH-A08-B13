@@ -106,11 +106,11 @@ const Navbar = () => {
               <div className="flex items-center lg:gap-3 gap-2">
               
                 <Image
-                  src={user?.image || "https://i.ibb.co.com/BHpL76BD/profile.avif"}
-                  alt="Profile picture"
+                  src={user?.image || "https://i.ibb.co.com/xqykWXq5/avatar-15.png"}
+                  alt="Profile"
                   width={42}
                   height={42}
-                  className="rounded-full mx-auto "
+                  className="rounded-full mx-auto border border-[#D4924A]"
                 />
                 
                 <button
