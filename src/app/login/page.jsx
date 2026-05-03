@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 import { authClient } from "../lib/auth-client";
+import toast from "react-hot-toast";
 
 const LoginPage = () => {
   const { register, handleSubmit, formState: { errors }, } = useForm();
@@ -23,16 +24,10 @@ const LoginPage = () => {
   };
 
     const handleGoogleLogin = async () => {
-    const {data:res, error} = await authClient.signIn.social({
+    const {data} = await authClient.signIn.social({
       provider: "google",
     });
-        if (error) {
-      toast.error(error.message);
-    }
-    if(res){
-      toast.success("Login successful")
-    }
-    
+
   };
 
   return (
@@ -72,6 +67,7 @@ const LoginPage = () => {
             <div className="divider">OR</div>
             <button
             onClick={handleGoogleLogin}
+            type="button" 
              className="btn bg-transparent py-6 rounded-3xl">
               <FcGoogle className="w-5 h-5"></FcGoogle>Continue with Google
             </button>

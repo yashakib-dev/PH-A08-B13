@@ -9,9 +9,12 @@ export async function proxy(request) {
   if (session) {
     return NextResponse.next();
   }
-  return NextResponse.redirect(new URL("/login", request.url));
+  const loginUrl = new URL("/login", request.url);
+  loginUrl.searchParams.set("callbackUrl", request.url);
+
+  return NextResponse.redirect(loginUrl);
 }
 
 export const config = {
-  matcher: ["/my-profile","/product-details/:path*"],
+  matcher: ["/my-profile", "/product-details/:path*"],
 };
