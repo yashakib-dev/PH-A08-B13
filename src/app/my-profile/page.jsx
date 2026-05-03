@@ -21,7 +21,7 @@ const router = useRouter();
         <div className="flex justify-between">
           <div className="flex gap-4 items-center">
             <Image
-              src={user?.photo || "https://i.ibb.co.com/xqykWXq5/avatar-15.png"}
+              src={user?.image  || "https://i.ibb.co.com/xqykWXq5/avatar-15.png"}
               width={100}
               alt="Profile picture"
               height={100}

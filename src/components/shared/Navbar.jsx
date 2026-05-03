@@ -104,16 +104,15 @@ const Navbar = () => {
           <div className="flex lg:gap-3 gap-2">
             {user ? (
               <div className="flex items-center lg:gap-3 gap-2">
-                <div className="text-center mx-auto">
+              
                 <Image
-                  src={user.image || "https://i.ibb.co.com/BHpL76BD/profile.avif"}
+                  src={user?.image || "https://i.ibb.co.com/BHpL76BD/profile.avif"}
                   alt="Profile picture"
                   width={44}
                   height={44}
                   className="rounded-full mx-auto "
                 />
-                <h2 className="text-white">{user.name}</h2>
-                </div>
+                
                 <button
                   onClick={handleLogout}
                   className="btn rounded-3xl  lg:w-25 lg:h-10 font-bold bg-transparent hover:border hover:border-[#D4924A] hover:text-[#D4924A] text-white "
