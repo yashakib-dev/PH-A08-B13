@@ -25,7 +25,7 @@ const router = useRouter();
               width={100}
               alt="Profile picture"
               height={100}
-              className="border border-black rounded-full"
+              className="border border-black h-25 w-25 rounded-full"
             ></Image>
             <div>
               <p className="text-xl font-bold">{user?.name}</p>

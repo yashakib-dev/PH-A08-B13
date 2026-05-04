@@ -110,7 +110,7 @@ const Navbar = () => {
                   alt="Profile"
                   width={42}
                   height={42}
-                  className="rounded-full mx-auto border border-[#D4924A]"
+                  className="rounded-full mx-auto h-10 w-10 border border-[#D4924A]"
                 />
                 
                 <button
