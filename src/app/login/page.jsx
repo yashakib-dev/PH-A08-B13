@@ -1,7 +1,4 @@
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
 "use client";
-
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
